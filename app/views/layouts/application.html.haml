@@ -1,0 +1,10 @@
+!!! 5
+%html
+  %head
+    = stylesheet_link_tag 'tenplate'
+  %body
+    #grid
+      = render :partial => "layouts/logo.svg"
+      #calendar
+      = yield
+  = javascript_include_tag "raphael-min", "SketchRockwell_700.font", "prototype", "calendar"

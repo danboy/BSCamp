@@ -1,0 +1,13 @@
+
+body
+  :background-color #333
+  #grid
+    :width= !grid + "em"
+    :margin 0 auto
+    .main,
+    .rail,
+    .page,
+    .full_page,
+    .column
+      :background-color= !background_color
+      +rounded
